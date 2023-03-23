@@ -50,8 +50,8 @@ print(is_square(a, b))
 a = float(input("Input width: "))
 b = float(input("Input length: "))
 def square_area (a, b):
-     if a == b and a > 0:
-        return ("ERROR")
+    if a <= 0 or b <= 0:
+        return ("Error")
      else:
          return (a * b)
 print("Square is", square_area (a, b))
