@@ -52,8 +52,8 @@ b = float(input("Input length: "))
 def square_area (a, b):
     if a <= 0 or b <= 0:
         return ("Error")
-     else:
-         return (a * b)
+    else:
+        return (a * b)
 print("Square is", square_area (a, b))
 
 ####
