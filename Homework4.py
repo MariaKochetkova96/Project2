@@ -46,7 +46,7 @@ def city_rating(cities_dict):
         "Dusseldorf": 59,
         "Kassel": 52
     }
-    print(sum(cities_dict.values()), (sum(cities_dict.values()) / len(cities_dict.values())), (max(cities_dict.keys())))
+    return (sum(cities_dict.values()), (sum(cities_dict.values()) / len(cities_dict.values())), (max(cities_dict.keys())))
 
 
 #                SETS                 #
