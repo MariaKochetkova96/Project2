@@ -19,13 +19,13 @@ def is_sorted(my_list):
 # Если значения, равного item, в списке не нашлось, верните строку "Error"
 
 def get_sublist(my_list, item):
-    i = my_list.index(item)
     if item not in my_list:
-        return ("Error")
-    elif i == 0:
-        return ([])
-    else:  # i in my_list
-        return (my_list[:i])
+        return "Error"
+    elif my_list.index(item) == 0:
+        return []
+    else:
+        i = my_list.index(item)
+        return my_list[:i]
 
 
 #            DICTIONARIES                 #
