@@ -19,12 +19,13 @@ def is_sorted(my_list):
 # Если значения, равного item, в списке не нашлось, верните строку "Error"
 
 def get_sublist(my_list, item):
-    if item in my_list:
-        print(my_list[:item])
-    elif my_list[0] == item:
-        print([])
-    elif not item in my_list:
-         return ("Error")
+    i = my_list.index(item)
+    if item not in my_list:
+        return ("Error")
+    elif i == 0:
+        return ([])
+    else:  # i in my_list
+        return (my_list[:i])
 
 
 #            DICTIONARIES                 #
@@ -57,7 +58,12 @@ def city_rating(cities_dict):
 # не пересекаются с детьми из других кружков)
 
 def not_busy_children(groups_dict):
-    pass
+    groups = {
+        "swimming": ["Emma", "Albert", "Peter"],
+        "chess": ["Caroline", "Albert", "Pam", "Harry"],
+        "guitar": ["Harry", "Peter", "Sam"],
+    }
+    return(difference(groups.values()))
 
 
 # ===========================================================================
@@ -104,4 +110,4 @@ if __name__ == '__main__':
     test_is_sorted()
     test_get_sublist()
     test_city_rating()
-   # test_not_busy_children()
+    test_not_busy_children()
