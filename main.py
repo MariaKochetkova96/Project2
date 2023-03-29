@@ -5,22 +5,20 @@
 # Примечание: Вы уже реализовали эту функцию на уроке.
 # Просто перепишите код и убедитесь, что он проходит тесты
 #
-def f(x):
-    return x + 2
-def b(y):
-    return y - 3
+def evaluate (x, y):
+    return (x + 2) * (y - 3)
 
-def func(x):
-    if x < 0:
-        s1 = ("The result is negative")
-    else:
-        s1 = ("The result is positive")
-    return s1
+#def func(x):
+#    if x < 0:
+#        s1 = ("The result is negative")
+#    else:
+#        s1 = ("The result is positive")
+#    return s1
 
-result =   f(-7)  * b(-2)
-s = func(result)
-print("The Number is ",result)
-print(s)
+#result =   f(-7)  * b(-2)
+#s = func(result)
+#print("The Number is ",result)
+#print(s)
 
 #
 # 2. Напишите функцию, которая принимает длину и ширину некого прямоугольника
