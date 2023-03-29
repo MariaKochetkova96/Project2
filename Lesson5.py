@@ -55,7 +55,6 @@ name = filter(name_a, numbers)
 print(list(name))
 
 
-
 #  3 Reduce
 
 from functools import reduce
