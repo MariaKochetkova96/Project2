@@ -73,5 +73,9 @@ print(reduce(max, numbers))
 
 
 #  3
+
+def string_l(x, y):
+    return x + " " + y
+
 line = ['hello', 'world', 'python', 'programming']
-print(reduce(line.split()))
+print(list(reduce(string_l, line)))
