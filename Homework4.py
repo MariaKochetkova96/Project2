@@ -63,7 +63,7 @@ def not_busy_children(groups_dict):
         "chess": ["Caroline", "Albert", "Pam", "Harry"],
         "guitar": ["Harry", "Peter", "Sam"],
     }
-    return(difference(groups.values()))
+    return(set.symmetric_difference(groups.values()))
 
 
 # ===========================================================================
